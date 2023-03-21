@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}m&j Carosserie{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+
+        <link rel="stylesheet" href="{{asset ('assets/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset ('assets/css/main.css')}}" id="color-switcher-link">
+        <link rel="stylesheet" href="{{asset ('assets/css/animations.css')}}">
+        <link rel="stylesheet" href="{{asset ('assets/css/fonts.css')}}">
+        <script src="{{asset ('assets/js/vendor/modernizr-2.6.2.min.js')}}"></script>
+        {% block stylesheets %}
+            
+        {% endblock %}
+
+    </head>
+    <body>
+        <div class="preloader">
+            <div class="preloader_image"></div>
+        </div>
+
+        <!-- search modal -->
+        <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+            <div class="widget widget_search">
+                <form method="get" class="searchform form-inline" action="/">
+                    <div class="form-group">
+                        <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+                    </div>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="canvas" class="dark">
+            <div id="box_wrapper">
+                <div class="page_header_wrapper template_header_wrapper affix-wrapper">
+                    <header class="page_header header_darkgrey ms template_header transparent_header table_section table_section_md left_menu_toggle affix">
+                        <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 col-md-8">
+                            <!-- main nav start -->
+                            <nav class="mainmenu_wrapper">
+                                <ul class="mainmenu nav sf-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+                                    <li class="active">
+                                        <a href="/">
+                                        <img class="header-logo" src="{{asset('assets/images/logos.png')}}" alt="Logo du garage de mécanique" style="width: 130px;">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{path('app_atelier')}}" class="sf-with-ul">Notre atelier</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{path('app_service')}}" class="sf-with-ul">Nos Services</a>
+                                    </li>
+                                    <!-- eof services -->
+                                    <!-- gallery -->
+                                    <li class="">
+                                        <a href="{{path('app_gallery')}}" class="sf-with-ul">Gallery</a>
+                                    <li class="">
+                                        <a href="{{path('app_contact')}}" class="sf-with-ul">Contact</a>
+                                    </li>
+                                    <!-- eof blog -->
+                                </ul>
+                            </nav>
+                            <!-- eof main nav -->
+                            </div>
+                            <div class="col-lg-3 col-mg-4 text-right line-height-0">
+                                <span class="toggle_menu">
+                                    <span></span>
+                                </span>
+                                <div class="media teaser thin-teaser inline-block text-left">
+                                        <a class="theme_button inverse" style="color:white !important;margin-left: 27px;margin-top: -20px;"  href="tel:+33 7 66 62 60 89">+33 7 66 62 60 89</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </header>
+                </div>    
+        {% block body %}
+        {% endblock %}
+
+        
+
+        <section class="page_copyright ds color table_section section_padding_top_20 section_padding_bottom_100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-center text-sm-left">
+                        <p>&copy; M&J Carosserie 2023 © | All rights reserved
+
+                        </p>
+                    </div>
+                    <div class="col-sm-6 text-center text-sm-right to_animate" data-animation="scaleAppear">
+                        <div class="page_social_icons greylinks">
+                            <a href="#" class="social-icon border-icon soc-facebook"></a>
+                            <a href="#" class="social-icon border-icon soc-twitter"></a>
+                            <a href="#" class="social-icon border-icon soc-skype"></a>
+                            <a href="#" class="social-icon border-icon soc-linkedin"></a>
+                            <a href="#" class="social-icon border-icon soc-google"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+            <!-- eof #box_wrapper -->
+    </div>    
+        {% block javascripts %}
+           <script src="{{asset('assets/js/compressed.js')}}"></script>
+           <script src="{{asset('assets/js/main.js')}}"></script>
+        {% endblock %}
+    </body>
+</html>

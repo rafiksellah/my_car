@@ -1,0 +1,450 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello GalleryController!{% endblock %}
+
+{% block body %}
+<section class="page_breadcrumbs template_breadcrumbs ds parallax">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="./">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li class="active">Gallery Regular 1 column</li>
+                </ol>
+                <h1>Gallery Regular 1 column</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ds page_portfolio section_padding_top_90 section_padding_bottom_90">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-push-2">
+
+                <div class="filters isotope_filters">
+                    <a href="#" data-filter="*" class="selected">All work</a>
+                    <a href="#" data-filter=".repair">Repair</a>
+                    <a href="#" data-filter=".mopar">Mopar</a>
+                    <a href="#" data-filter=".import">Import</a>
+                    <a href="#" data-filter=".ford">Ford</a>
+                    <a href="#" data-filter=".gm">Gm</a>
+                </div>
+
+                <div class="isotope_container isotope row masonry-layout columns_margin_top_0 columns_margin_bottom_30" data-filters=".isotope_filters">
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 photography">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/01.jpg" alt="">
+                                <div class="media-links">
+                                </div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/01.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 development programming">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/02.jpg" alt="">
+                                <div class="media-links">
+                                </div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/02.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 development photography">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/03.jpg" alt="">
+                                <div class="media-links">
+                                </div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/03.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 photography webdesign">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/04.jpg" alt="">
+                                <div class="media-links"></div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/04.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 development programming">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/05.jpg" alt="">
+                                <div class="media-links"></div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/05.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 development photography">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/06.jpg" alt="">
+                                <div class="media-links"></div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/06.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 development photography">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/07.jpg" alt="">
+                                <div class="media-links"></div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/07.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 photography webdesign">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/08.jpg" alt="">
+                                <div class="media-links"></div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/08.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 development programming">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/09.jpg" alt="">
+                                <div class="media-links"></div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/09.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 development programming">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/10.jpg" alt="">
+                                <div class="media-links"></div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/10.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 webdesign photography development">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/11.jpg" alt="">
+                                <div class="media-links"></div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/11.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="isotope-item col-lg-12 col-md-12 col-sm-12 webdesign photography">
+                        <div class="vertical-item gallery-item content-absolute text-center cs">
+                            <div class="item-media">
+                                <img src="images/gallery/12.jpg" alt="">
+                                <div class="media-links"></div>
+                            </div>
+                            <div class="item-content display_table">
+                                <div class="display_table_cell">
+                                    <div class="links-wrap greylinks">
+                                        <a href="#" class="like-link">
+                                            <i class="flaticon-heart"></i>
+                                        </a>
+                                        <a class="p-link" title="" href="gallery-single.html">
+                                            <i class="flaticon-link"></i>
+                                        </a>
+                                        <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/12.jpg">
+                                            <i class="flaticon-glasses"></i>
+                                        </a>
+                                    </div>
+                                    <h3 class="text-uppercase">
+                                        <a href="gallery-single.html">Nulla finibus sed justo</a>
+                                    </h3>
+                                    <span class="categories-links greylinks">
+                                        <a rel="category" href="gallery-fullwidth-4-cols.html">Category 1</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- eof .isotope_container.row -->
+
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="topmargin_40">
+                            <ul class="pagination @@margins">
+                                <li>
+                                    <a href="#">
+                                        <span class="sr-only">Prev</span>
+                                        <i class="rt-icon2-chevron-thin-left"></i>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="sr-only">Next</span>
+                                        <i class="rt-icon2-chevron-thin-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
